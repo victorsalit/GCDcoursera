@@ -155,7 +155,7 @@ run_analysis <- function(datafolder = "UCI HAR Dataset", save = FALSE, fname = "
     tidy <- spread(tidier,stats,value)
     
     # converting the non-variables to factors:
-    tidy$subject <- formatC(tidy$subject, width=2, flag="0") 
+    tidy$subject <- paste("s", formatC(tidy$subject, width=2, flag="0"), sep="")
     tidy <- data.table(data.frame(unclass(tidy), stringsAsFactors = TRUE))
     setkey(tidy,subject,activity,signal.cmpnt,sensor,axis) # reordering
     cat("done.\n")

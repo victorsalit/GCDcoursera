@@ -85,8 +85,7 @@ save        a logical controlling whether to export the result to a file.
 fname       a character string naming the file to which to write the result in case save=TRUE.
 ```
 
-Note1: to load the saved file directly use the read.table with the option header = TRUE
+Note: to load the saved file directly use the read.table with the option header = TRUE
 ```R
 fromfile <- read.table(file, header = TRUE)
 ```
-Note2: the 'subject' column is a *factor* in the run_analysis output, but it is a *int* in the read.table output.
