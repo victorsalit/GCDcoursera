@@ -1,0 +1,14 @@
+Codebook for the GCD Project
+============================
+
+The Tidy.txt contains the tidy dataset from the function run_analysis.R
+
+The dataset containes the following seven columns
+
+1. subject - a factor with 30 levels representing a test subject id, coded as 's01'... 's30'.
+2. activity - a factor with 6 levels representing the activity performed by the test subject during the measurement. The labels are: 'WALKING', 'WALKING_UPSTAIRS', 'WALKING_DOWNSTAIRS', 'SITTING', 'STANDING', 'LAYING'.
+3. signal.cmpnt - a factor with two levels representing the component of the measured signal encoded as 'Body' and 'Gravity'.
+4. sensor - a factor with two levels representing the smartphone sensor used to obtain the signal, encoded as 'Acc' for accelerometer and 'Gyro' for gyroscope.
+5. axis - a factor with three levels representing the corresponding measurement axis ecoded as 'X', 'Y' and 'Z'. For accelerometer signal this should be read as 'acceleration *along* the X axis', whereas for the gyroscope signal this should be read as 'angular velocity *about* the X axis'.
+6. mean - mean measurement, averaged for each activity and each subject.
+7. std - std measurement, averaged for each activity and each subject.
