@@ -73,20 +73,20 @@ The dataframe represents only two true variables (in the sense of tidy) - mean a
 ### Usage
 1. fork and clone the repo https://github.com/victorsalit/GCDcoursera
 2. 
-'''R
+```R
 source("run_analysis.R")
 tidy <- run_analysis(datafolder = "UCI HAR Dataset", save = FALSE, fname = "tidy.txt")
-'''
+```
 
-'''
+```
 Function arguments:
 datafolder  a character string naming the data folder which is assumed to reside in the working directory.    
 save        a logical controlling whether to export the result to a file.
 fname       a character string naming the file to which to write the result in case save=TRUE.
-'''
+```
 
 Note1: to load the saved file directly use the read.table with the option header = TRUE
-'''R
+```R
 fromfile <- read.table(file, header = TRUE)
-'''
-Note2: the 'subject' column is a -factor- in the run_analysis output, but it is a -int- in the read.table output.
+```
+Note2: the 'subject' column is a *factor* in the run_analysis output, but it is a *int* in the read.table output.
